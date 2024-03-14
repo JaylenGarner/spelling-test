@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { fetchWordData, validateWord } = require("./helpers/wordHelpers");
+const { fetchWordData, validateWord } = require("../utils/wordsUtils");
 
 router.post("/", async (req, res) => {
   try {

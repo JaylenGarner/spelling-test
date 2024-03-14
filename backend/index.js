@@ -1,9 +1,9 @@
 require("dotenv").config();
 
 const express = require("express");
-const wordRouter = require("./routes/words");
-
 const app = express();
+
+const wordRouter = require("./src/routes/words");
 
 // Middleware
 app.use(express.json());
