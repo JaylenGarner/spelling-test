@@ -1,0 +1,29 @@
+if (process.env.NODE_ENV === "development") {
+  require("dotenv").config({ path: ".env.development" });
+} else {
+  require("dotenv").config({ path: ".env.production" });
+}
+
+module.exports = {
+  development: {
+    database: process.env.DB_NAME,
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    host: process.env.DB_HOST,
+    dialect: "postgres",
+  },
+  test: {
+    database: process.env.DB_NAME,
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    host: process.env.DB_HOST,
+    dialect: "postgres",
+  },
+  production: {
+    database: process.env.DB_NAME,
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    host: process.env.DB_HOST,
+    dialect: "postgres",
+  },
+};
