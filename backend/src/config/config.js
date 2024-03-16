@@ -1,8 +1,4 @@
-if (process.env.NODE_ENV === "development") {
-  require("dotenv").config({ path: ".env.development" });
-} else {
-  require("dotenv").config({ path: ".env.production" });
-}
+require("dotenv").config();
 
 module.exports = {
   development: {

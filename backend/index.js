@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-const dbTest = require("./src/config/database");
+const dbConnection = require("./src/config/database");
 
 const wordRouter = require("./src/routes/words");
 
@@ -22,4 +22,4 @@ app.listen(process.env.PORT, () => {
 });
 
 // To test connecting to the database, authentication is succesful
-dbTest();
+dbConnection();

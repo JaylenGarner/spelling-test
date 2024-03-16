@@ -1,8 +1,4 @@
-if (process.env.NODE_ENV === "development") {
-  require("dotenv").config({ path: ".env.development" });
-} else {
-  require("dotenv").config({ path: ".env.production" });
-}
+require("dotenv").config();
 
 const { Sequelize } = require("sequelize");
 
@@ -14,7 +10,7 @@ const sequelize = new Sequelize({
   dialect: "postgres",
 });
 
-const testConnection = async () => {
+const connection = async () => {
   try {
     await sequelize.authenticate();
     console.log("Connection to database has been established successfully.");
@@ -24,4 +20,4 @@ const testConnection = async () => {
   }
 };
 
-module.exports = testConnection;
+module.exports = connection;
