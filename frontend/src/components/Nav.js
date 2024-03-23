@@ -5,6 +5,7 @@ const Nav = () => {
     <header>
       <div className="container">
         <Link to="/">Home</Link>
+        <Link to="/demo">Demo</Link>
       </div>
     </header>
   );
