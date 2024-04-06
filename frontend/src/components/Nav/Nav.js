@@ -3,12 +3,12 @@ import styles from "./Nav.module.css";
 
 const Nav = () => {
   return (
-    <header className="">
+    <header>
       <div className={styles.container}>
-        <Link to="/" className="link">
+        <Link to="/" className={styles.link}>
           Home
         </Link>
-        <Link to="/demo" className="link">
+        <Link to="/demo" className={styles.link}>
           Demo
         </Link>
       </div>
