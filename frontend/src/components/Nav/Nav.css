@@ -1,0 +1,15 @@
+.container {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.link {
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
