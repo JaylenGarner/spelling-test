@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import "./Nav.css";
+import styles from "./Nav.module.css";
 
 const Nav = () => {
   return (
-    <header>
-      <div className="container">
+    <header className="">
+      <div className={styles.container}>
         <Link to="/" className="link">
           Home
         </Link>
