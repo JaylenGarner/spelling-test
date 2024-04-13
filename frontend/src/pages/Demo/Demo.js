@@ -1,5 +1,6 @@
 import styles from "./Demo.module.css";
 import { useState } from "react";
+import DemoTest from "../../components/DemoTest/DemoTest";
 
 const Demo = () => {
   const [word, setWord] = useState("");
@@ -26,7 +27,7 @@ const Demo = () => {
           <button> Submit</button>
         </form>
       ) : (
-        <h2>Selected Word: {word}</h2>
+        <DemoTest />
       )}
     </div>
   );
