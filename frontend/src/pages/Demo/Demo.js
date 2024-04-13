@@ -26,7 +26,7 @@ const Demo = () => {
           <button> Submit</button>
         </form>
       ) : (
-        <DemoTest />
+        <DemoTest word={word} />
       )}
     </div>
   );
