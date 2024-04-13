@@ -8,7 +8,6 @@ const Demo = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Selected Word: " + word);
     setSubmitted(true);
   };
 
